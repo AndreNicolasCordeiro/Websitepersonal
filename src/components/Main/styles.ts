@@ -1,16 +1,19 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.main`
-  background-color: #06092b;
+  background-color: #1f1f1f;
   color: #fff;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100 200;
 `
 
 export const Logo = styled.img`
@@ -19,15 +22,22 @@ export const Logo = styled.img`
 `
 
 export const Title = styled.h1`
-  font-size: 2.5rem;
+  @font-face {
+    font-family: 'QualyBold';
+    src: url('/fonts/QualyBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  font-family: 'QualyBold', sans-serif;
+  font-size: 10rem;
 `
 
 export const Description = styled.h2`
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 `
-
-export const Illustration = styled.img`
-  margin-top: 3rem;
-  width: min(30rem, 100%);
+export const Image = styled.div`
+  width: 100%;
 `

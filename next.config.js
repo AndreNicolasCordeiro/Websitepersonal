@@ -11,5 +11,13 @@ module.exports = withPWA({
   pwa: {
     dest: 'public',
     disable: !isProd
-  }
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/fonts/:path*",
+        destination: "/_next/static/fonts/:path*",
+      },
+    ];
+  },
 })
