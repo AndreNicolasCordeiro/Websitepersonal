@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 import About from 'components/About'
 import Menu from 'components/Menu'
+import Projects from 'components/Projects'
 
 const Main = ({
   title = 'André Cordeiro',
@@ -46,6 +47,7 @@ const Main = ({
         </S.Image>
       </S.Wrapper>
       <About />
+      <Projects />
     </>
   )
 }
