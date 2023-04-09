@@ -13,6 +13,10 @@ export const Cursor = styled.div`
   border: 2px solid #753ee2;
   backdrop-filter: grayscale(1);
   pointer-events: none;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `
 
 export const CursorSmall = styled.div`
@@ -25,4 +29,8 @@ export const CursorSmall = styled.div`
   left: -2px;
   pointer-events: none;
   z-index: 99999;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `

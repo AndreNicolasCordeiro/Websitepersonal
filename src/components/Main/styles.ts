@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.main`
   background-color: #1f1f1f;
   color: #fff;
-  width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 3rem;
   text-align: center;
   display: flex;
@@ -13,6 +12,14 @@ export const Wrapper = styled.main`
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: 1440px) {
+    width: 1440px;
+  }
+
+  @media (max-width: 1640px) {
+    width: 1640px;
+  }
 `
 
 export const Logo = styled.img`

@@ -14,12 +14,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html, body, #__next {
-    height: 100%;
+    min-height: 100%;
     background-color: #1f1f1f;
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+    font-family: montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
   

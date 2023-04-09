@@ -6,6 +6,14 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 1440px) {
+    width: 1440px;
+  }
+
+  @media (max-width: 1660px) {
+    width: 1660px;
+  }
 `
 
 export const Project = styled.div`
@@ -57,6 +65,10 @@ background:  ${(props) => (props.selected ? '#753ee2' : '#1f1f1f')};
 export const Image = styled.image`
   display: flex;
   justify-content: left;
+
+  @media (max-width: 1660px) {
+    width: 55%;
+  }
 `
 
 export const Title = styled.h2`
@@ -68,6 +80,10 @@ export const Title = styled.h2`
 `
 export const Box = styled.div`
   width: 1660px;
+
+  @media (max-width: 1660px) {
+    width: 1250px;
+  }
 `
 
 export const Description = styled.p`
@@ -80,6 +96,10 @@ export const Info = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 10rem;
+
+  @media (max-width: 1660px) {
+    padding: 2rem;
+  }
 `
 
 export const TitlePrincipal = styled.h2`
@@ -108,9 +128,12 @@ export const InfoPrincipal = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 4rem;
-  padding-left: 28rem;
-  padding-right: 28rem;
+  width: 70%;
+  padding-bottom: 5rem;
+
+  @media (max-width: 1660px) {
+    width: 60%;
+  }
 `
 
 export const Buttontwo = styled.button`

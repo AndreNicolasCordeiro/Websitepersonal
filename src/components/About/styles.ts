@@ -2,6 +2,14 @@ import styled from 'styled-components'
 
 export const ScrollSection = styled.section`
   overflow: hidden;
+
+  @media (max-width: 1440px) {
+    width: 1440px;
+  }
+
+  @media (max-width: 1640px) {
+    width: 1640px;
+  }
 `
 
 export const ScrollInner = styled.div`
@@ -10,6 +18,11 @@ export const ScrollInner = styled.div`
   display: flex;
   flex-direction: row;
   position: relative;
+
+  @media (max-width: 1440px) {
+    width: 400vw;
+    margin-left: 10rem;
+  }
 `
 
 export const ScrollUnic = styled.div`
@@ -18,25 +31,34 @@ export const ScrollUnic = styled.div`
   justify-content: center;
   align-items: left;
   display: flex;
-  padding-left: 23rem;
-  padding-right: 30rem;
-  padding-top: 30rem;
-  padding-bottom: 30rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 `
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 5rem;
+  padding-right: 4rem;
+
+  width: 75%;
+
+  @media (max-width: 1440px) {
+  }
+
+  @media (max-width: 1640px) {
+  }
 `
 
 export const Boximg = styled.div`
   background: #f6f0f0;
-  width: 85rem;
-  height: 100%;
+  width: 37rem;
+  height: 40%;
   background-image: url('img/sobre.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
+  border: 5px solid #753ee2;
 `
 
 export const Box = styled.div`
@@ -84,6 +106,14 @@ export const ProgressBar = styled.progress`
   width: 100%;
   height: 5px;
   background: yellow;
+
+  @media (max-width: 1440px) {
+    width: 1440px;
+  }
+
+  @media (max-width: 1640px) {
+    width: 1640px;
+  }
 `
 
 export const Scrolldown = styled.div`
@@ -98,7 +128,8 @@ export const Scrolldown = styled.div`
   border-radius: 50px;
   margin: 0 auto;
   top: 2.5%;
-  
+
+
   &::before{
   content: "";
   position: absolute;

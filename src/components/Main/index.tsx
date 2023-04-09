@@ -1,16 +1,27 @@
 import * as S from './styles'
 import gsap from 'gsap'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import About from 'components/About'
 import Menu from 'components/Menu'
 import Mouse from 'components/Mouse'
 import Projects from 'components/Projects'
+import Loading from 'components/Loading'
 
 const Main = ({
   title = 'André Cordeiro',
   description = 'Engenheiro de Software, Programador Front-End e Designer Digital',
   imageUrl = '/img/unsplash4.png'
 }) => {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 2200)
+
+    return () => clearTimeout(timer)
+  }, [])
+
   const wrapperRef = useRef<HTMLDivElement>(null)
 
   const timelineRef = useRef<gsap.core.Timeline>()
@@ -40,6 +51,10 @@ const Main = ({
     }
   }, [])
 
+  if (loading) {
+    return <Loading />
+  }
+
   return (
     <>
       <Menu />
@@ -58,4 +73,5 @@ const Main = ({
     </>
   )
 }
+
 export default Main
