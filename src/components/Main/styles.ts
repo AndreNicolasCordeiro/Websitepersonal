@@ -13,7 +13,6 @@ export const Wrapper = styled.main`
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 100 200;
 `
 
 export const Logo = styled.img`

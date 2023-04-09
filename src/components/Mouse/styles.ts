@@ -10,7 +10,7 @@ export const Cursor = styled.div`
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 9999;
-  border: 2px solid #ccc;
+  border: 2px solid #753ee2;
   backdrop-filter: grayscale(1);
   pointer-events: none;
 `
@@ -19,7 +19,7 @@ export const CursorSmall = styled.div`
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #753ee2;
   position: fixed;
   top: -2px;
   left: -2px;

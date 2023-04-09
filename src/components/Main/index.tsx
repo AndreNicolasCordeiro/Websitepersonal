@@ -9,24 +9,29 @@ import Projects from 'components/Projects'
 const Main = ({
   title = 'André Cordeiro',
   description = 'Engenheiro de Software, Programador Front-End e Designer Digital',
-  imageUrl = '/img/unsplash2.jpg'
+  imageUrl = '/img/unsplash4.png'
 }) => {
   const wrapperRef = useRef<HTMLDivElement>(null)
+
+  const timelineRef = useRef<gsap.core.Timeline>()
 
   useEffect(() => {
     const wrapper = wrapperRef.current
 
     const parallax = () => {
       const scrollPosition = window.pageYOffset
-      if (scrollPosition > 0) {
+      if (scrollPosition <= 370) {
+        timelineRef.current?.pause()
         gsap.to(wrapper, {
           backgroundPositionY: `${scrollPosition * 0.6}px`,
           duration: 0.5
         })
+      } else {
+        timelineRef.current?.resume()
       }
     }
 
-    parallax()
+    timelineRef.current = gsap.timeline({ paused: true }).to(wrapper, {})
 
     window.addEventListener('scroll', parallax)
 

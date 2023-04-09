@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const Section = styled.section`
-width: 100%
-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 export const Project = styled.div`
@@ -26,18 +26,16 @@ export const Container = styled.div`
 
 export const Tags = styled.div``
 
-export const Categories = styled.div`
-  padding: 1rem;
-`
+export const Categories = styled.div``
 
 interface ButtonProps {
   selected?: boolean
 }
 
 export const Button = styled.button<ButtonProps>`
-background:  ${(props) => (props.selected ? '#f6f0f0' : '#1f1f1f')};
+background:  ${(props) => (props.selected ? '#753ee2' : '#1f1f1f')};
   color:  ${(props) => (props.selected ? '#1f1f1f' : '#f6f0f0')};
-  padding: 1.2rem 2rem;
+  padding: 2rem 6rem;
   font-size: 16px;
   font-weight: 600;
   font-family: 'montserrat'
@@ -48,17 +46,17 @@ background:  ${(props) => (props.selected ? '#f6f0f0' : '#1f1f1f')};
   border: 1px solid #f6f0f0;
   margin-right: 2.5rem;
   margin-left: 2.5rem;
-
+  margin-bottom: 4rem;
+  
+  
   &:hover {
-    border: 1px solid #1f1f1f;
+    border: 1px solid #f6f0f0;
   }
 `
 
 export const Image = styled.image`
   display: flex;
   justify-content: left;
-  width: 100%;
-  height: 100%;
 `
 
 export const Title = styled.h2`
@@ -81,24 +79,56 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20rem;
+  padding: 10rem;
 `
 
 export const TitlePrincipal = styled.h2`
-  font-size: 3.2rem;
-  color: #f6f0f0;
-  font-family: 'montserrat';
+  font-size: 5rem;
   text-transform: uppercase;
-  padding-bottom: 1.4rem;
+  font-family: QualyBold;
+  color: #f6f0f0;
+  position: relative;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.4rem;
+    background-color: #753ee2;
 `
 
 export const DescriptionPrincipal = styled.p`
   color: #f6f0f0;
-  font-size: 2rem;
+  padding-top: 2.4rem;
+  font-size: 2.4rem;
 `
 export const InfoPrincipal = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
+  padding-left: 28rem;
+  padding-right: 28rem;
+`
+
+export const Buttontwo = styled.button`
+background: #1f1f1f;
+color: #f6f0f0;
+  padding: 2rem 2rem;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'montserrat'
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all .4s cubic-bezier(0.77, 0, 0.175, 1); 
+  cursor: pointer;
+  border: 1px solid #f6f0f0;
+  margin-top: 2rem;
+  
+  
+  &:hover {
+    color: #753ee2;
+  }
 `

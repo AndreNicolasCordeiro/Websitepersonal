@@ -18,7 +18,7 @@ const Menu = () => {
           </S.MenuItem>
           <S.MenuItem>
             <Link href="/index" passHref>
-              <S.MenuLink>LinkedIn</S.MenuLink>
+              <S.MenuLink>Instagram</S.MenuLink>
             </Link>
           </S.MenuItem>
           <S.MenuItem>
