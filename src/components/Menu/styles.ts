@@ -5,7 +5,7 @@ export const MenuContainer = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #1f1f1f;
   color: #fff;
   z-index: 999;
 `

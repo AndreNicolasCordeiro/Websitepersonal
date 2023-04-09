@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 import About from 'components/About'
 import Menu from 'components/Menu'
+import Mouse from 'components/Mouse'
 import Projects from 'components/Projects'
 
 const Main = ({
@@ -37,6 +38,7 @@ const Main = ({
   return (
     <>
       <Menu />
+      <Mouse />
       <S.Wrapper
         ref={wrapperRef}
         style={{ backgroundImage: `url(${imageUrl})` }}

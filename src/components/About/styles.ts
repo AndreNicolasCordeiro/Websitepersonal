@@ -35,6 +35,10 @@ export const Description = styled.p`
 `
 
 export const ProgressBar = styled.progress`
+  ::-webkit-progress-value {
+    background-color: white;
+  }
+
   position: relative;
   top: 30rem;
   width: 100%;
