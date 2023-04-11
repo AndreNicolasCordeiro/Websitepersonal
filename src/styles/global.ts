@@ -19,8 +19,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-
-    font-family: montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+    font-family: 'Montserrat', sans-serif;
   }
 
   

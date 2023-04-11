@@ -5,6 +5,7 @@ import About from 'components/About'
 import Menu from 'components/Menu'
 import Mouse from 'components/Mouse'
 import Projects from 'components/Projects'
+
 import Loading from 'components/Loading'
 
 const Main = ({

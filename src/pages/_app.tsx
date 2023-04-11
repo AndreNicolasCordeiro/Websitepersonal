@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { GoogleFonts } from 'next-google-fonts'
 
 import GlobalStyles from 'styles/global'
 
@@ -18,6 +19,7 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
+      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
       <Component {...pageProps} />
     </>
   )
