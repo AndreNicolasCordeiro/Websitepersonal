@@ -58,7 +58,7 @@ export const Boximg = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  border: 5px solid #753ee2;
+  border: 5px solid #6d6b6b;
 `
 
 export const Box = styled.div`
@@ -75,8 +75,11 @@ export const Box = styled.div`
 export const Container = styled.div``
 
 export const Title = styled.h2`
-  color: white;
+background: linear-gradient(to right, #f6f0f0, #6D6B6B);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
   font-size: 5rem;
+  width: auto;
   position: relative;
   text-transform: uppercase;
   font-family: QualyBold;
@@ -87,7 +90,7 @@ export const Title = styled.h2`
     left: 0;
     width: 100%;
     height: 0.4rem;
-    background-color: #753ee2;
+    background-color: #6D6B6B;
 `
 
 export const Description = styled.p`

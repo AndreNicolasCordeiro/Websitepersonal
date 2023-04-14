@@ -41,7 +41,7 @@ interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>`
-background:  ${(props) => (props.selected ? '#753ee2' : '#1f1f1f')};
+background:  ${(props) => (props.selected ? '#f6f0f0' : '#1f1f1f')};
   color:  ${(props) => (props.selected ? '#1f1f1f' : '#f6f0f0')};
   padding: 2rem 6rem;
   font-size: 16px;
@@ -58,7 +58,7 @@ background:  ${(props) => (props.selected ? '#753ee2' : '#1f1f1f')};
   
   
   &:hover {
-    border: 1px solid #f6f0f0;
+    letter-spacing: 0.50rem;
   }
 `
 
@@ -106,7 +106,9 @@ export const TitlePrincipal = styled.h2`
   font-size: 5rem;
   text-transform: uppercase;
   font-family: QualyBold;
-  color: #f6f0f0;
+  background: linear-gradient(to right, #f6f0f0, #1f1f1f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
   
   &:after {
@@ -116,7 +118,7 @@ export const TitlePrincipal = styled.h2`
     left: 0;
     width: 100%;
     height: 0.4rem;
-    background-color: #753ee2;
+    background-color: #6D6B6B;
 `
 
 export const DescriptionPrincipal = styled.p`
@@ -152,6 +154,8 @@ color: #f6f0f0;
   
   
   &:hover {
-    color: #753ee2;
+    color: #1f1f1f;
+    background-color: #f6f0f0;
+    border: 2px solid #1f1f1f;
   }
 `

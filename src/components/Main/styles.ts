@@ -37,12 +37,18 @@ export const Title = styled.h1`
   }
   font-family: 'QualyBold', sans-serif;
   font-size: 10rem;
+  background: linear-gradient(to right, #f6f0f0, #1f1f1f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
 
 export const Description = styled.h2`
   font-size: 2.5rem;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #f6f0f0, #1f1f1f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
 export const Image = styled.div`
   width: 100%;

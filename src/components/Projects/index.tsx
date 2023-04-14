@@ -1,11 +1,13 @@
 import * as S from './styles'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const projects: IProject[] = [
   {
     title: 'Nescafé',
     field: 'Design',
+    link: '/projectNescafe',
     description:
       'Projeto de Manipulação de Imagem que desenvolvi práticas de manipulação como dodge and burn, sombras, contraste, coloração, luzes e profundidade. ',
     image: {
@@ -16,6 +18,7 @@ const projects: IProject[] = [
   {
     title: 'Cervo Dourado',
     field: 'Design',
+    link: '/projectCervo',
     description:
       'Projeto de Manipulação de Imagem, que construí com base no cervo, com práticas de luzes e máscaras, criei a ambientação do local.',
     image: {
@@ -26,6 +29,7 @@ const projects: IProject[] = [
   {
     title: 'Rinoceronte Dourado',
     field: 'Design',
+    link: '/projectRinoceronte',
     description:
       'Projeto de Manipulação de Imagem, utilizei como item principal a imagem do rinoceronte, utilizando conceitos de profundidade, sombras, luzes, filtro e máscaras, realizei a ambientação da imagem.',
     image: { src: '/img/Manipulacao1.png', alt: 'Descrição da imagem' }
@@ -33,6 +37,7 @@ const projects: IProject[] = [
   {
     title: 'Código',
     field: 'Programação',
+    link: '/projectfour',
     description:
       'Programação é o processo de escrita, teste e manutenção de um programa de computador.',
     image: { src: '/img/codes.jpg', alt: 'Descrição da imagem' }
@@ -40,6 +45,7 @@ const projects: IProject[] = [
   {
     title: 'Projeto',
     field: 'Programação',
+    link: '/projectfive',
     description:
       'Programação é o processo de escrita, teste e manutenção de um programa de computador.',
     image: { src: '/img/codes.jpg', alt: 'Descrição da imagem' }
@@ -49,6 +55,7 @@ const projects: IProject[] = [
 interface IProject {
   title: string
   field: string
+  link: string
   description: string
   image: {
     src: string
@@ -144,12 +151,15 @@ const Projects = ({}: Props) => {
                     width={700}
                     height={700}
                     layout="fixed"
+                    loading="lazy"
                   />
                 </S.Image>
                 <S.Info>
                   <S.Title>{project.title}</S.Title>
                   <S.Description>{project.description}</S.Description>
-                  <S.Buttontwo>Ver projeto</S.Buttontwo>
+                  <Link href={project.link} passHref>
+                    <S.Buttontwo>Ver projeto</S.Buttontwo>
+                  </Link>
                 </S.Info>
               </S.Project>
             ))}
