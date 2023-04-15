@@ -34,6 +34,7 @@ const Main = ({
         <>
           <Menu />
           <Mouse />
+
           <S.Wrapper>
             <S.Image>
               <S.Title>{title}</S.Title>

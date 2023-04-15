@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.main`
   background-color: #1f1f1f;
-  color: #fff;
+  color: #f6f0f0;
   min-height: 100vh;
   padding: 3rem;
   text-align: center;
@@ -10,21 +10,6 @@ export const Wrapper = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (max-width: 1440px) {
-    width: 1440px;
-  }
-
-  @media (max-width: 1640px) {
-    width: 1640px;
-  }
-`
-
-export const Logo = styled.img`
-  width: 25rem;
-  margin-bottom: 2rem;
 `
 
 export const Title = styled.h1`
@@ -40,6 +25,10 @@ export const Title = styled.h1`
   background: linear-gradient(to right, #f6f0f0, #1f1f1f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 768px) {
+    font-size: 7rem;
+  }
 `
 
 export const Description = styled.h2`
@@ -49,6 +38,10 @@ export const Description = styled.h2`
   background: linear-gradient(to right, #f6f0f0, #1f1f1f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 `
 export const Image = styled.div`
   width: 100%;

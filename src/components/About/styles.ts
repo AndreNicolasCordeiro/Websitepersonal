@@ -2,14 +2,7 @@ import styled from 'styled-components'
 
 export const ScrollSection = styled.section`
   overflow: hidden;
-
-  @media (max-width: 1440px) {
-    width: 1440px;
-  }
-
-  @media (max-width: 1640px) {
-    width: 1640px;
-  }
+  background: #1f1f1f;
 `
 
 export const ScrollInner = styled.div`
@@ -18,11 +11,6 @@ export const ScrollInner = styled.div`
   display: flex;
   flex-direction: row;
   position: relative;
-
-  @media (max-width: 1440px) {
-    width: 400vw;
-    margin-left: 10rem;
-  }
 `
 
 export const ScrollUnic = styled.div`
@@ -42,12 +30,6 @@ export const Info = styled.div`
   padding-right: 4rem;
 
   width: 75%;
-
-  @media (max-width: 1440px) {
-  }
-
-  @media (max-width: 1640px) {
-  }
 `
 
 export const Boximg = styled.div`
@@ -109,14 +91,6 @@ export const ProgressBar = styled.progress`
   width: 100%;
   height: 5px;
   background: yellow;
-
-  @media (max-width: 1440px) {
-    width: 1440px;
-  }
-
-  @media (max-width: 1640px) {
-    width: 1640px;
-  }
 `
 
 export const Scrolldown = styled.div`
@@ -132,7 +106,10 @@ export const Scrolldown = styled.div`
   margin: 0 auto;
   top: 2.5%;
 
-
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+  
   &::before{
   content: "";
   position: absolute;
@@ -177,6 +154,10 @@ export const Chevrons = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 export const Chevronsdown = styled.div`
   margin-top: -6px;

@@ -7,9 +7,9 @@ const projects: IProject[] = [
   {
     title: 'Nescafé',
     field: 'Design',
-    link: '/projectNescafe',
+    link: 'https://www.behance.net/gallery/166850461/Manipulacao-de-imagem-Nescaf',
     description:
-      'Projeto de Manipulação de Imagem que desenvolvi práticas de manipulação como dodge and burn, sombras, contraste, coloração, luzes e profundidade. ',
+      'Projeto de Manipulação de Imagem que desenvolvi com práticas de manipulação, como dodge and burn, sombras, contraste, coloração, luzes e profundidade. ',
     image: {
       src: '/img/Manipulacao3.png',
       alt: 'Manipulação de imagem do Cappuccino Nescafé + Negresco'
@@ -18,9 +18,9 @@ const projects: IProject[] = [
   {
     title: 'Cervo Dourado',
     field: 'Design',
-    link: '/projectCervo',
+    link: 'https://www.behance.net/gallery/166347513/Manipulacao-de-imagem-Cervo-Dourado',
     description:
-      'Projeto de Manipulação de Imagem, que construí com base no cervo, com práticas de luzes e máscaras, criei a ambientação do local.',
+      'Projeto de Manipulação de Imagem, que construí com base na imagem do cervo, com práticas de luzes e máscaras, criei a ambientação do local.',
     image: {
       src: '/img/Manipulacao2.png',
       alt: 'Manipulação Cervo na Floresta'
@@ -29,26 +29,58 @@ const projects: IProject[] = [
   {
     title: 'Rinoceronte Dourado',
     field: 'Design',
-    link: '/projectRinoceronte',
+    link: 'https://www.behance.net/gallery/166347513/Manipulacao-de-imagem-Cervo-Dourado',
     description:
       'Projeto de Manipulação de Imagem, utilizei como item principal a imagem do rinoceronte, utilizando conceitos de profundidade, sombras, luzes, filtro e máscaras, realizei a ambientação da imagem.',
     image: { src: '/img/Manipulacao1.png', alt: 'Descrição da imagem' }
   },
   {
-    title: 'Código',
+    title: 'Projeto UGV website + dashboard',
     field: 'Programação',
-    link: '/projectfour',
+    link: 'https://andrenicolascordeiro.github.io/ugvsiteapp/',
     description:
-      'Programação é o processo de escrita, teste e manutenção de um programa de computador.',
-    image: { src: '/img/codes.jpg', alt: 'Descrição da imagem' }
+      'Website desenvolvido para um projeto da UGV, onde por meio dele seria a reconstrução do website da UGV e ainda teria uma dashboard da área aluno. Foi utilizado Html, Css, Javascript e BootStrap.',
+    image: { src: '/img/Ugvsiteapp.png', alt: 'Descrição da imagem' }
   },
   {
-    title: 'Projeto',
+    title: 'Projeto sistema financeiro',
     field: 'Programação',
-    link: '/projectfive',
+    link: 'https://financial-system-iota.vercel.app/',
     description:
-      'Programação é o processo de escrita, teste e manutenção de um programa de computador.',
-    image: { src: '/img/codes.jpg', alt: 'Descrição da imagem' }
+      'Projeto de sistema financeiro, onde o mesmo é feito com React e Typescript, por meio dele é possivel calcular as despesas e informar a categoria.',
+    image: { src: '/img/Sistemafinanceiro.png', alt: 'Descrição da imagem' }
+  },
+  {
+    title: 'Projeto Lista de tarefas',
+    field: 'Programação',
+    link: 'https://tasklist-kappa-eight.vercel.app/',
+    description:
+      'Projeto simples de Lista de tarefa onde o usuário cadastra a tarefa e por meio dela é salvo no localstorage para mostrar ao usuário. Foi utilizado React e Typescript',
+    image: { src: '/img/Listadetarefas.png', alt: 'Descrição da imagem' }
+  },
+  {
+    title: 'Projeto Formulário 03 etapas',
+    field: 'Programação',
+    link: 'https://multi-form-beta.vercel.app/',
+    description:
+      'Formulário de várias etapas, onde foi desenvolvido com React e Typescript. Usa-se React Router, onde o usuário não consegue prosseguir se não preencher os campos.',
+    image: { src: '/img/Formmult.png', alt: 'Descrição da imagem' }
+  },
+  {
+    title: 'Carrossel EngSoftware - UGV',
+    field: 'Design',
+    link: 'https://www.instagram.com/p/CpKycyHux0u/',
+    description:
+      'Carrossel criado para a UGV Engenharia de Software, onde foi para o Instagram, por meio da criação dele foi possível realizar técnicas de sombra, composição, tipografia e entre outros.',
+    image: { src: '/img/Carrossel01.png', alt: 'Descrição da imagem' }
+  },
+  {
+    title: 'Carrossel EngSoftware2 - UGV',
+    field: 'Design',
+    link: 'https://www.instagram.com/p/CovBN3iuoIy/',
+    description:
+      'Carrossel criado para a UGV Engenharia de Software, onde foi para o Instagram, por meio da criação dele foi possível realizar técnicas de sombra, composição, tipografia e entre outros.',
+    image: { src: '/img/Carrossel02.png', alt: 'Descrição da imagem' }
   }
 ]
 
@@ -140,31 +172,29 @@ const Projects = ({}: Props) => {
             )
           })}
         </S.Categories>
-        <S.Box>
-          <S.Container>
-            {filteredCategories.map((project) => (
-              <S.Project key={project.title}>
-                <S.Image>
-                  <Image
-                    src={project.image.src}
-                    alt={project.image.alt}
-                    width={700}
-                    height={700}
-                    layout="fixed"
-                    loading="lazy"
-                  />
-                </S.Image>
-                <S.Info>
-                  <S.Title>{project.title}</S.Title>
-                  <S.Description>{project.description}</S.Description>
-                  <Link href={project.link} passHref>
-                    <S.Buttontwo>Ver projeto</S.Buttontwo>
-                  </Link>
-                </S.Info>
-              </S.Project>
-            ))}
-          </S.Container>
-        </S.Box>
+
+        <S.Container>
+          {filteredCategories.map((project) => (
+            <S.Project key={project.title}>
+              <S.StyledImage>
+                <Image
+                  src={project.image.src}
+                  alt={project.image.alt}
+                  width={700}
+                  height={700}
+                  loading="lazy"
+                />
+              </S.StyledImage>
+              <S.Info>
+                <S.Title>{project.title}</S.Title>
+                <S.Description>{project.description}</S.Description>
+                <Link href={project.link} passHref>
+                  <S.Buttontwo>Ver projeto</S.Buttontwo>
+                </Link>
+              </S.Info>
+            </S.Project>
+          ))}
+        </S.Container>
       </S.Section>
     </>
   )

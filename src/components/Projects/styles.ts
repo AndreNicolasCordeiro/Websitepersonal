@@ -6,14 +6,12 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
 
-  @media (max-width: 1440px) {
-    width: 1440px;
-  }
-
-  @media (max-width: 1660px) {
-    width: 1660px;
-  }
+export const StyledImage = styled.image`
+  display: flex;
+  justify-content: left;
+  min-width: 50%;
 `
 
 export const Project = styled.div`
@@ -21,18 +19,19 @@ background-color: #f6f0f0;
 width: 80%;
 margin: 0 auto;
 display flex;
+
+@media screen and (max-width: 700px){
+  flex-direction: column;
 }
+
+
 `
 
 export const Container = styled.div`
-  color: white;
-  font-size: 1.4rem;
   display: grid;
   grid-templates-column: 1fr;
   gap: 2rem;
 `
-
-export const Tags = styled.div``
 
 export const Categories = styled.div``
 
@@ -62,43 +61,40 @@ background:  ${(props) => (props.selected ? '#f6f0f0' : '#1f1f1f')};
   }
 `
 
-export const Image = styled.image`
-  display: flex;
-  justify-content: left;
-
-  @media (max-width: 1660px) {
-    width: 55%;
-  }
-`
-
 export const Title = styled.h2`
   font-size: 3.2rem;
   color: #1f1f1f;
   font-family: 'montserrat';
   text-transform: uppercase;
-  padding-bottom: 1.4rem;
-`
-export const Box = styled.div`
-  width: 1660px;
+  margin-bottom: 1.4rem;
 
-  @media (max-width: 1660px) {
-    width: 1250px;
+  @media screen and (max-width: 700px) {
+    font-size: 2.5rem;
   }
 `
 
 export const Description = styled.p`
   color: #1f1f1f;
   font-size: 1.8rem;
+  width: 80%;
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
 `
 
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10rem;
 
-  @media (max-width: 1660px) {
-    padding: 2rem;
+  @media screen and (max-width: 1440px) {
+    padding-left: 2rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `
 
@@ -110,7 +106,7 @@ export const TitlePrincipal = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  
+
   &:after {
     content: "";
     position: absolute;
@@ -132,10 +128,6 @@ export const InfoPrincipal = styled.div`
   justify-content: center;
   width: 70%;
   padding-bottom: 5rem;
-
-  @media (max-width: 1660px) {
-    width: 60%;
-  }
 `
 
 export const Buttontwo = styled.button`
@@ -151,8 +143,11 @@ color: #f6f0f0;
   cursor: pointer;
   border: 1px solid #f6f0f0;
   margin-top: 2rem;
+  width: 40%;
   
-  
+  @media screen and (max-width: 700px){
+    width: 100%;
+  }
   &:hover {
     color: #1f1f1f;
     background-color: #f6f0f0;

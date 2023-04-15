@@ -23,6 +23,20 @@ export const MenuItem = styled.li`
   padding: 3rem;
   padding-left: 7rem;
   padding-right: 7rem;
+
+  @media screen and (max-width: 1440px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const MenuLink = styled.a`
