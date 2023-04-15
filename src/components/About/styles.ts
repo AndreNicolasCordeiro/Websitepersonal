@@ -3,8 +3,22 @@ import styled from 'styled-components'
 export const ScrollSection = styled.section`
   overflow: hidden;
   background: #1f1f1f;
-`
 
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+`
+export const MobileAbout = styled.main`
+  display: none;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`
 export const ScrollInner = styled.div`
   height: 100vh;
   width: 400vw;
@@ -30,6 +44,11 @@ export const Info = styled.div`
   padding-right: 4rem;
 
   width: 75%;
+
+  @media screen and (max-width: 500px) {
+    padding: 2rem;
+    width: 80%;
+  }
 `
 
 export const Boximg = styled.div`
@@ -65,6 +84,11 @@ background: linear-gradient(to right, #f6f0f0, #6D6B6B);
   position: relative;
   text-transform: uppercase;
   font-family: QualyBold;
+
+  @media screen and (max-width: 500px) {
+    font-size: 3.2rem;
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -80,6 +104,10 @@ export const Description = styled.p`
   padding-top: 2.4rem;
   font-size: 2.4rem;
   font-family: montserrat;
+
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
 `
 
 export const ProgressBar = styled.progress`
@@ -91,6 +119,10 @@ export const ProgressBar = styled.progress`
   width: 100%;
   height: 5px;
   background: yellow;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `
 
 export const Scrolldown = styled.div`

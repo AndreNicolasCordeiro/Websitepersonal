@@ -55,7 +55,11 @@ background:  ${(props) => (props.selected ? '#f6f0f0' : '#1f1f1f')};
   margin-left: 2.5rem;
   margin-bottom: 4rem;
   
-  
+  @media screen and (max-width: 500px) {
+    width:80%;
+  margin-left: 4rem;
+  }
+
   &:hover {
     letter-spacing: 0.50rem;
   }
@@ -96,6 +100,10 @@ export const Info = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  @media screen and (max-width: 500px) {
+    padding: 2.5rem;
+  }
 `
 
 export const TitlePrincipal = styled.h2`
@@ -106,6 +114,11 @@ export const TitlePrincipal = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+
+  @media screen and (max-width: 500px) {
+    font-size: 3.2rem;
+    margin-top: 5rem;
+  }
 
   &:after {
     content: "";
@@ -121,6 +134,10 @@ export const DescriptionPrincipal = styled.p`
   color: #f6f0f0;
   padding-top: 2.4rem;
   font-size: 2.4rem;
+
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
 `
 export const InfoPrincipal = styled.div`
   display: flex;

@@ -29,6 +29,15 @@ export const Title = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 7rem;
   }
+  @media screen and (max-width: 450px) {
+    background: linear-gradient(to right, #f6f0f0, #6d6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 5rem;
+  }
 `
 
 export const Description = styled.h2`
@@ -41,6 +50,16 @@ export const Description = styled.h2`
 
   @media screen and (max-width: 768px) {
     font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    background: linear-gradient(to right, #f6f0f0, #6d6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `
 export const Image = styled.div`
