@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Section = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@ width: 80%;
 margin: 0 auto;
 display flex;
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   flex-direction: column;
 }
 
@@ -72,7 +72,7 @@ export const Title = styled.h2`
   text-transform: uppercase;
   margin-bottom: 1.4rem;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     font-size: 2.5rem;
   }
 `
@@ -82,7 +82,7 @@ export const Description = styled.p`
   font-size: 1.8rem;
   width: 80%;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
   }
 `
@@ -92,16 +92,15 @@ export const Info = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: 1440px) {
-    padding-left: 2rem;
+  @media screen and (min-width: 1025px) {
+    padding: 5rem;
   }
 
-  @media screen and (max-width: 700px) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  @media screen and (max-width: 800px) {
+    padding: 2.5rem;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1024px) {
     padding: 2.5rem;
   }
 `
@@ -160,11 +159,8 @@ color: #f6f0f0;
   cursor: pointer;
   border: 1px solid #f6f0f0;
   margin-top: 2rem;
-  width: 40%;
+  width: 60%;
   
-  @media screen and (max-width: 700px){
-    width: 100%;
-  }
   &:hover {
     color: #1f1f1f;
     background-color: #f6f0f0;

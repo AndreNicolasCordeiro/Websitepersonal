@@ -1,9 +1,18 @@
 import * as S from './styles'
 import Link from 'next/link'
+import { useState } from 'react'
+import MenuMobile from 'components/MenuMobile'
+import { RiMenu3Fill } from 'react-icons/ri'
 
 const Menu = () => {
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   return (
     <>
+      <MenuMobile
+        isVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
       <S.MenuContainer>
         <S.MenuList>
           <S.MenuItem>
@@ -49,6 +58,12 @@ const Menu = () => {
           </S.MenuItem>
         </S.MenuList>
       </S.MenuContainer>
+
+      <S.MenuNav>
+        <S.Icon>
+          <RiMenu3Fill onClick={() => setMenuIsVisible(true)} />
+        </S.Icon>
+      </S.MenuNav>
     </>
   )
 }

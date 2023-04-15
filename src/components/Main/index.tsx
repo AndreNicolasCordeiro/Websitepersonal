@@ -4,7 +4,7 @@ import About from 'components/About'
 import Menu from 'components/Menu'
 import Mouse from 'components/Mouse'
 import Projects from 'components/Projects'
-
+import Footer from 'components/Footer'
 import Loading from 'components/Loading'
 
 const Main = ({
@@ -43,6 +43,7 @@ const Main = ({
           </S.Wrapper>
           <About />
           <Projects />
+          <Footer />
         </>
       )}
     </>

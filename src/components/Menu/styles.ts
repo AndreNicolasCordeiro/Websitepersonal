@@ -61,3 +61,18 @@ export const Title = styled.h1`
   font-family: 'QualyBold', sans-serif;
   font-size: 5rem;
 `
+
+export const MenuNav = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #f6f0f0;
+`
+
+export const Icon = styled.image`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #f6f0f0;
+  font-size: 3rem;
+`
