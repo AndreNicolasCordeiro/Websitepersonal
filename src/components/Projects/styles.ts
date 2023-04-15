@@ -6,6 +6,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #1f1f1f;
 `
 
 export const StyledImage = styled.image`
@@ -56,8 +57,8 @@ background:  ${(props) => (props.selected ? '#f6f0f0' : '#1f1f1f')};
   margin-bottom: 4rem;
   
   @media screen and (max-width: 500px) {
-    width:80%;
-  margin-left: 4rem;
+  width:80%;
+  
   }
 
   &:hover {
@@ -161,6 +162,10 @@ color: #f6f0f0;
   margin-top: 2rem;
   width: 60%;
   
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+
   &:hover {
     color: #1f1f1f;
     background-color: #f6f0f0;

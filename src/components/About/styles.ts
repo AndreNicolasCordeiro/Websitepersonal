@@ -10,6 +10,7 @@ export const ScrollSection = styled.section`
 `
 export const MobileAbout = styled.main`
   display: none;
+  background: #1f1f1f;
 
   @media screen and (max-width: 500px) {
     display: block;

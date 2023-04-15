@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #__next {
     min-height: 100%;
-    background-color: #1f1f1f;
+    background-color: red;
 
     
   }
