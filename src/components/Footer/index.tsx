@@ -18,6 +18,7 @@ const Footer = () => {
                   height={50}
                   width={50}
                   loading="lazy"
+                  alt={'Logo da plataforma do Behance.'}
                 />
               </Link>
             </S.Icon>
@@ -31,6 +32,7 @@ const Footer = () => {
                   height={50}
                   width={50}
                   loading="lazy"
+                  alt={'Logo da plataforma do GitHub.'}
                 />
               </Link>
             </S.Icon>
@@ -44,6 +46,7 @@ const Footer = () => {
                   height={50}
                   width={50}
                   loading="lazy"
+                  alt={'Logo da plataforma do Instagram.'}
                 />
               </Link>
             </S.Icon>

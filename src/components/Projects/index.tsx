@@ -22,7 +22,7 @@ const projects: IProject[] = [
     description:
       'Projeto de Manipulação de Imagem, que construí com base na imagem do cervo, com práticas de luzes e máscaras, criei a ambientação do local.',
     image: {
-      src: '/img/Manipulacao2.png',
+      src: '/img/Manipulacao2.jpg',
       alt: 'Manipulação Cervo na Floresta'
     }
   },
@@ -32,7 +32,10 @@ const projects: IProject[] = [
     link: 'https://www.behance.net/gallery/166347513/Manipulacao-de-imagem-Cervo-Dourado',
     description:
       'Projeto de Manipulação de Imagem, utilizei como item principal a imagem do rinoceronte, utilizando conceitos de profundidade, sombras, luzes, filtro e máscaras, realizei a ambientação da imagem.',
-    image: { src: '/img/Manipulacao1.png', alt: 'Descrição da imagem' }
+    image: {
+      src: '/img/Manipulacao1.jpg',
+      alt: 'Manipulação de um Rinoceronte em uma floresta.'
+    }
   },
   {
     title: 'Projeto UGV website + dashboard',
@@ -40,7 +43,10 @@ const projects: IProject[] = [
     link: 'https://andrenicolascordeiro.github.io/ugvsiteapp/',
     description:
       'Website desenvolvido para um projeto da UGV, onde por meio dele seria a reconstrução do website da UGV e ainda teria uma dashboard da área aluno. Foi utilizado Html, Css, Javascript e BootStrap.',
-    image: { src: '/img/Ugvsiteapp.png', alt: 'Descrição da imagem' }
+    image: {
+      src: '/img/Ugvsiteapp.png',
+      alt: 'Projeto de Website para a instituição UGV.'
+    }
   },
   {
     title: 'Projeto sistema financeiro',
@@ -48,7 +54,10 @@ const projects: IProject[] = [
     link: 'https://financial-system-iota.vercel.app/',
     description:
       'Projeto de sistema financeiro, onde o mesmo é feito com React e Typescript, por meio dele é possivel calcular as despesas e informar a categoria.',
-    image: { src: '/img/Sistemafinanceiro.png', alt: 'Descrição da imagem' }
+    image: {
+      src: '/img/Sistemafinanceiro.png',
+      alt: 'Projeto de um sistema financeiro em Javascript.'
+    }
   },
   {
     title: 'Projeto Lista de tarefas',
@@ -56,7 +65,10 @@ const projects: IProject[] = [
     link: 'https://tasklist-kappa-eight.vercel.app/',
     description:
       'Projeto simples de Lista de tarefa onde o usuário cadastra a tarefa e por meio dela é salvo no localstorage para mostrar ao usuário. Foi utilizado React e Typescript',
-    image: { src: '/img/Listadetarefas.png', alt: 'Descrição da imagem' }
+    image: {
+      src: '/img/Listadetarefas.png',
+      alt: 'Projeto de Lista de tarefas em Javascript.'
+    }
   },
   {
     title: 'Projeto Formulário 03 etapas',
@@ -64,7 +76,10 @@ const projects: IProject[] = [
     link: 'https://multi-form-beta.vercel.app/',
     description:
       'Formulário de várias etapas, onde foi desenvolvido com React e Typescript. Usa-se React Router, onde o usuário não consegue prosseguir se não preencher os campos.',
-    image: { src: '/img/Formmult.png', alt: 'Descrição da imagem' }
+    image: {
+      src: '/img/Formmult.png',
+      alt: 'Projeto Formulário de etapas em Javascript.'
+    }
   },
   {
     title: 'Carrossel EngSoftware - UGV',
@@ -72,7 +87,10 @@ const projects: IProject[] = [
     link: 'https://www.instagram.com/p/CpKycyHux0u/',
     description:
       'Carrossel criado para a UGV Engenharia de Software, onde foi para o Instagram, por meio da criação dele foi possível realizar técnicas de sombra, composição, tipografia e entre outros.',
-    image: { src: '/img/Carrossel01.png', alt: 'Descrição da imagem' }
+    image: {
+      src: '/img/Carrossel01.png',
+      alt: 'Design de Carrossel para o Instagram.'
+    }
   },
   {
     title: 'Carrossel EngSoftware2 - UGV',
@@ -80,7 +98,10 @@ const projects: IProject[] = [
     link: 'https://www.instagram.com/p/CovBN3iuoIy/',
     description:
       'Carrossel criado para a UGV Engenharia de Software, onde foi para o Instagram, por meio da criação dele foi possível realizar técnicas de sombra, composição, tipografia e entre outros.',
-    image: { src: '/img/Carrossel02.png', alt: 'Descrição da imagem' }
+    image: {
+      src: '/img/Carrossel02.png',
+      alt: 'Design de Carrossel para o Instagram.'
+    }
   }
 ]
 

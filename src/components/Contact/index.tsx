@@ -61,7 +61,12 @@ const Contact = () => {
     <>
       <S.Container>
         <S.Image>
-          <Image src={'/img/fundo.jpg'} width={700} height={700} />
+          <Image
+            src={'/img/fundo.jpg'}
+            width={700}
+            height={700}
+            alt={'Imagem de fundo com vários dispositivos em cima de uma mesa.'}
+          />
         </S.Image>
         <S.FormContainer onSubmit={handleSubmit}>
           <S.FormTitle>Entre em contato</S.FormTitle>
