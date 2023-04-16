@@ -48,6 +48,40 @@ export const MenuLink = styled.a`
   font-weight: bold;
   font-size: 18px;
   cursor: pointer;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    left: 0;
+    height: 2px;
+    bottom: -2px;
+    background: linear-gradient(to right, #f6f0f0, #6d6b6b);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    right: 0;
+    background: linear-gradient(to right, #f6f0f0, #6d6b6b);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover:before {
+    background: linear-gradient(to right, #f6f0f0, #6d6b6b);
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
 `
 
 export const Title = styled.h1`

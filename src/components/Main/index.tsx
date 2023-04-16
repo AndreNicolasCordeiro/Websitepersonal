@@ -6,6 +6,7 @@ import Projects from 'components/Projects'
 import Footer from 'components/Footer'
 import Loading from 'components/Loading'
 import Contact from 'components/Contact'
+
 const Main = ({
   title = 'André Cordeiro',
   description = 'Engenheiro de Software, Programador Front-End e Designer Digital'

@@ -78,7 +78,7 @@ export const FormInput = styled.input`
 `
 
 export const FormTextarea = styled.textarea`
-  padding: 0.5rem;
+  padding: 2rem 2rem;
   font-size: 16px;
   font-weight: 600;
   font-family: 'montserrat'
