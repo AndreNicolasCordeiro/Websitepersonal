@@ -35,7 +35,7 @@ export const Title = styled.h2`
     font-size: 2.6rem;
   }
 `
-export const TitleBottom = styled.h4`
+export const TitleBottom = styled.p`
   font-family: Montserrat;
   font-size: 1.8rem;
   color: #f6f0f0;

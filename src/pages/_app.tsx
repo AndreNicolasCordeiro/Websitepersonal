@@ -14,15 +14,11 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/img/iconweb2.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1f1f1f" />
-        <meta
-          name="André Cordeiro - Programador e Design | Portfólio"
-          content="Conheça o portfólio de André Cordeiro, um programador e designer com habilidades em desenvolvimento web, design e manipulação de imagens."
-        />
-        <link rel="canonical" href="URL_canônica_da_página"></link>
-        <meta
-          name="keywords"
-          content="Programação, Design, Manipulação, Imagens, UI, UX, Portfólio, Web, WebDesign, Programador, Designer"
-        ></meta>
+        {/* prettier-ignore */}
+        <meta name="description" content="Conheça o portfólio de André Cordeiro, um programador e designer com habilidades em desenvolvimento web, design e manipulação de imagens." />
+        <link rel="canonical" href="https://website-personal-two.vercel.app/" />
+        {/* prettier-ignore */}
+        <meta name="keywords" content="Programação, Design, Manipulação, Imagens, UI, UX, Portfólio, Web, WebDesign, Programador, Designer" />
         <meta name="robots" content="index, follow" />
       </Head>
       <GlobalStyles />
