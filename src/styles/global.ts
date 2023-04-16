@@ -6,7 +6,6 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    cursor: none;
 
   }
 
@@ -17,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #__next {
     min-height: 100%;
-    background-color: red;
+    background-color: #1f1f1f;
 
     
   }

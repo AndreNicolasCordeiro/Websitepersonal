@@ -2,11 +2,10 @@ import * as S from './styles'
 import { useEffect, useState } from 'react'
 import About from 'components/About'
 import Menu from 'components/Menu'
-import Mouse from 'components/Mouse'
 import Projects from 'components/Projects'
 import Footer from 'components/Footer'
 import Loading from 'components/Loading'
-
+import Contact from 'components/Contact'
 const Main = ({
   title = 'André Cordeiro',
   description = 'Engenheiro de Software, Programador Front-End e Designer Digital'
@@ -33,8 +32,6 @@ const Main = ({
       ) : (
         <>
           <Menu />
-          <Mouse />
-
           <S.Wrapper>
             <S.Image>
               <S.Title>{title}</S.Title>
@@ -43,6 +40,7 @@ const Main = ({
           </S.Wrapper>
           <About />
           <Projects />
+          <Contact />
           <Footer />
         </>
       )}
