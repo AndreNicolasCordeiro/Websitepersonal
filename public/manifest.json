@@ -3,7 +3,7 @@
   "short_name": "André Cordeiro",
   "icons": [
     {
-      "src": "/img/iconweb2.png",
+      "src": "/img/maskable-icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -11,8 +11,10 @@
   "background_color": "#1f1f1f",
   "background-color": "#1f1f1f",
   "description": "Conheça o portfólio de André Cordeiro, um programador e designer com habilidades em desenvolvimento web, design e manipulação de imagens.",
-  "display": "fullscreen",
+  "display": "standalone",
   "start_url": "/",
   "theme_color": "#f6f0f0",
-  "theme-color": "#f6f0f0"
+  "theme-color": "#f6f0f0",
+  "scope": "/index.tsx"
+
 }
