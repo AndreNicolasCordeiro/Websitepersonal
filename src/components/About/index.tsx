@@ -46,12 +46,6 @@ const About = () => {
     <>
       <S.ScrollSection>
         <S.Container ref={triggerRef}>
-          <S.Scrolldown>
-            <S.Chevrons>
-              <S.Chevronsdown></S.Chevronsdown>
-              <S.Chevronsdown></S.Chevronsdown>
-            </S.Chevrons>
-          </S.Scrolldown>
           <S.ProgressBar value={scrollPosition}></S.ProgressBar>
           <S.ScrollInner ref={sectionRef}>
             <S.ScrollUnic>

@@ -38,6 +38,12 @@ const Main = ({
               <S.Title>{title}</S.Title>
               <S.Description>{description}</S.Description>
             </S.Image>
+            <S.Scrolldown>
+              <S.Chevrons>
+                <S.Chevronsdown></S.Chevronsdown>
+                <S.Chevronsdown></S.Chevronsdown>
+              </S.Chevrons>
+            </S.Scrolldown>
           </S.Wrapper>
           <About />
           <Projects />
